@@ -1,1 +1,62 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Index</title>\n</head>\n<body>\n    <h1>Welcome to Amiral Battı</h1>\n    <p>This is the index page.</p>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMİRAL BATTI — Koordinat Sistemi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 1px;
+            border: 1px solid #ccc;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            background-color: #add8e6;
+            border: 1px solid #aaa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hit {
+            background-color: red;
+        }
+        .miss {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>AMİRAL BATTI Game</h1>
+    <div class="grid" id="grid"></div>
+    <script>
+        // Game Logic Here
+        // Variables for player and AI mode
+        const grid = document.getElementById('grid');
+        const boardSize = 10;
+        let playerBoard = Array(boardSize).fill(null).map(() => Array(boardSize).fill(0));
+        let aiBoard = Array(boardSize).fill(null).map(() => Array(boardSize).fill(0));
+
+        function initGame() {
+            // Initialize game boards and place ships
+        }
+
+        function fireAtCoordinate(x, y) {
+            // Logic for firing at the coordinate
+        }
+
+        function checkWin() {
+            // Check if a player has won
+        }
+
+        initGame();
+    </script>
+</body>
+</html>
